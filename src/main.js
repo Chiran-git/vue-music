@@ -1,17 +1,20 @@
 
-import './assets/base.css'
-import './assets/main.css'
-import '@fortawesome/fontawesome-free/css/all.css'
+import './assets/base.css';
+import './assets/main.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 
-import App from './App.vue'
-import router from './router'
+import VeeValidatePlugin from './includes/validation';
 
-const app = createApp(App)
+import App from './App.vue';
+import router from './router';
 
-app.use(createPinia())
-app.use(router)
+const app = createApp(App);
 
-app.mount('#app')
+app.use(createPinia());
+app.use(router);
+app.use(VeeValidatePlugin);
+
+app.mount('#app');
