@@ -21,6 +21,5 @@ const usersCollection = db.collection('users');
 
 export {
   auth,
-  db,
   usersCollection
 }
