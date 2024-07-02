@@ -90,6 +90,7 @@ export default {
                         display_name: auth.currentUser.displayName,
                         originalName: task.snapshot.ref.name,
                         modifiedName: task.snapshot.ref.name,
+                        modified_name: task.snapshot.ref.name,
                         genre: '',
                         comment_count: 0
                     };
