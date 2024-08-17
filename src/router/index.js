@@ -30,7 +30,7 @@ const routes = [
     redirect: { name: 'manage' }
   },
   {
-    name: '/song',
+    name: 'song',
     path: '/song/:id',
     component: Song
   },
