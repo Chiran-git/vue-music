@@ -62,6 +62,19 @@ export default {
                     console.error("Invalid file type");
                     return;
                 }
+
+                if (!navigator.onLine) {
+                    this.uploads.push({
+                        task: {},
+                        current_progress: 100,
+                        name: file.name,
+                        variant: "bg-red-400",
+                        icon: "fas fa-times",
+                        text_class: "text-red-400",
+                    })
+                    console.error("No internet connection");
+                    return;
+                }
                 
                 const storageRef = storage.ref();
                 const songsRef = storageRef.child(`songs/${file.name}`);
