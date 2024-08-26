@@ -44,6 +44,6 @@
     "start-server-and-test": "^2.0.3",
     "vite": "^5.0.10",
     "vite-plugin-pwa": "^0.20.1",
-    "vitest": "^1.0.4"
+    "vitest": "^1.6.0"
   }
 }
