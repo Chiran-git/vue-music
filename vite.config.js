@@ -7,6 +7,10 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    globals: true, // Ensure globals is set to true
+    environment: 'jsdom' // Set the test environment to jsdom
+  },
   plugins: [
     vue(), 
     VitePWA({
